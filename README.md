@@ -3,7 +3,7 @@
 A simple and modern **Weather App** built with Python and Tkinter.
 ## 📸 Preview
 
-![Weather App Screenshot](Weather_app.png)
+![Weather App Screenshot](Weather-app.png)
 
 The app allows users to search for a city and view its current weather information along with a short upcoming-hours forecast.
 
