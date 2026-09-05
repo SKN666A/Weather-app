@@ -74,7 +74,7 @@ def get_weather():
 # --- GUI Window Setup ---
 root = tk.Tk()
 root.title("Weather App - Modern GUI")
-root.geometry("750x850")
+root.geometry("750x550")
 root.configure(bg="#282c34") # Dark modern background
 root.resizable(False, False)
 
