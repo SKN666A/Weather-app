@@ -1,10 +1,18 @@
 import tkinter as tk
 from tkinter import messagebox
 import requests
+import os
 
 def get_weather():
+    
+    api_key = os.getenv("OPENWEATHER_API_KEY")
+    if not api_key:
+        messagebox.showerror(
+        "API Key Missing",
+        "OPENWEATHER_API_KEY is not set.\nPlease configure your API key before using the app."
+    )
+        return
     city = city_entry.get().strip()
-    api_key = "***REMOVED***"  # 👈 Yahan apni OpenWeatherMap ki API Key paste karein
 
     if not city:
         messagebox.showwarning("Warning", "Aap ne shehar ka naam enter nahi kiya!")
