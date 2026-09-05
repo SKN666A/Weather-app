@@ -1,24 +1,91 @@
-# 🌤️ Weather App
+﻿# 🌤️ Weather App
 
-A simple Weather App built with Python.
+A simple and modern **Weather App** built with Python and Tkinter.
+
+The app allows users to search for a city and view its current weather information along with a short upcoming-hours forecast.
 
 ## ✨ Features
 
-- 🌡️ Check current weather
-- 🌍 Search weather by city
-- 📊 Display temperature and weather information
-- 🐍 Built using Python
+* 🌍 Search weather by city
+* 🌡️ Display current temperature
+* ☁️ Show current weather condition
+* 💧 Display humidity
+* 💨 Display wind speed
+* 📅 Show short upcoming-hours forecast
+* 🖥️ Modern desktop GUI
+* ⚠️ Handles invalid cities and API errors
 
 ## 🛠️ Technologies Used
 
-- Python
-- Weather API
+* 🐍 Python
+* 🖼️ Tkinter
+* 🌐 OpenWeather API
+* 📦 Requests
+* 📁 PyInstaller
+
+## 📁 Project Structure
+
+```text
+Weather-app/
+│
+├── weather_app.py
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+## 📦 Installation
+
+1. Make sure **Python** is installed.
+
+2. Install the required library:
+
+```bash
+pip install -r requirements.txt
+```
+
+## 🔑 API Key Setup
+
+This application uses the **OpenWeather API**.
+
+You need an OpenWeather API key before running the application.
+
+For PowerShell, set your API key as an environment variable:
+
+```powershell
+$env:OPENWEATHER_API_KEY="YOUR_API_KEY"
+```
+
+**Never publish your real API key in this README or on GitHub.**
 
 ## ▶️ How to Run
 
-1. Make sure Python is installed.
-2. Open the project folder.
-3. Run the following command:
+After setting your API key, run:
 
 ```bash
 python weather_app.py
+```
+
+The Weather App window will open. Enter a city name and click **Search**.
+
+## 🖥️ Windows EXE
+
+A Windows executable can also be created using **PyInstaller**:
+
+```bash
+pyinstaller --clean --onefile --windowed weather_app.py
+```
+
+The generated `.exe` file will be placed inside the `dist` folder.
+
+> **Note:** The executable still requires access to a valid `OPENWEATHER_API_KEY` environment variable.
+
+## ⚠️ Important
+
+* An internet connection is required.
+* A valid OpenWeather API key is required.
+* Do not share or commit your API key to GitHub.
+
+## 👩‍💻 Author
+
+**Sakina**
